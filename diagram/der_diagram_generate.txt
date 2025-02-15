@@ -1,0 +1,66 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+TABLE customers {
+	customer_id uuid [primary key]
+  email_hashed varchar (200)
+	first_name_hashed varchar (200)
+  last_name_hashed varchar (200)
+  gender varchar (10)
+  birth_date_hashed varchar (200)
+  phone_number_hashed varchar (200)
+  type varchar (20)
+  status varchar(50)
+  address_hashed struct
+	created_at timestamp
+  updated_at timestamp
+  deactivated_at timestamp
+  other_columns struct
+}
+
+TABLE categories {
+	category_id uuid [primary key]
+  parent_category_id uuid [ref: > categories.category_id]
+  name varchar (100)
+  complete_path varchar (200)
+	created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+}
+
+TABLE items {
+	item_id uuid [primary key]
+  title varchar (200)
+  description varchar (200)
+  status varchar (50)
+  price numeric
+	category_id uuid [ref: > categories.category_id]
+  customer_id uuid [ref: > customers.customer_id]
+  parent_item_id uuid  [ref: > items.item_id]
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+  and_a_few_more_columns struct
+}
+
+TABLE orders {
+	order_id uuid [primary key]
+  item_id uuid [ref: > items.item_id]
+  customer_id uuid [ref: > customers.customer_id]
+  status varchar(50)
+	item_quantity numeric
+  item_price numeric
+  order_value numeric
+  created_at timestamp
+  updated_at timestamp
+  cancelled_at timestamp
+}
+
+TABLE items_daily {
+  item_id uuid [primary key, ref: > items.item_id]
+  snapshot_date date [primary key]
+  price numeric
+  status varchar (60)
+  updated_at timestamp
+
+}
