@@ -1,5 +1,9 @@
 # Case 1 - SQL
 
+## Credentials
+
+Due to new Google Cloud policies, shared credentials in public repos are automatically disabled. To be able to query in the code, **DOWNLOAD the credentials.json file in [THIS LINK](https://drive.google.com/drive/u/0/folders/1RUpBViKoCOmAwgaNebg3rxVVx_SgJOUk) and place it in the script folder**
+
 ## Answers to the Case
 
 The answers to the case are in the `create_tables.sql` and `answers_case.sql`, but to be able to actually create, populate and run the queries, we created a Python script which connects to a existing BigQuery project. For each task, there's a query in the `queries` folder that will be executed.
@@ -49,6 +53,8 @@ It creates, populates and then generates CSVs with the answers for all 3 tasks i
 
 ## Files
 
+**credentials.json**: Credentials to access the BigQuery API. You can download it in [THIS LINK](https://drive.google.com/drive/u/0/folders/1RUpBViKoCOmAwgaNebg3rxVVx_SgJOUk)
+
 There are extra files / folders:
 
 1. **create_tables.sql**: Contains the DDL to create and populate the tables
@@ -61,6 +67,5 @@ There are extra files / folders:
    5. **populate_items_daily.sql**: Contain the Procedure for the third question
    6. **call_populate_items_daily.sql**: Contain the call to the Procedure for the third question
 4. **answer_x_case_1.csv**: 3 CSVs are generated with the results for the tasks.
-5. **credentials.json**: Credentials to access the BigQuery API.
-6. **diagram/der.png**: Contains the `DER` as a image.
-7. **diagram/der_diagram_generate.txt**: Contains the `DER` as a text, to be used in dbdiagram.io website to recreate the DER
+5. **diagram/der.png**: Contains the `DER` as a image.
+6. **diagram/der_diagram_generate.txt**: Contains the `DER` as a text, to be used in dbdiagram.io website to recreate the DER
