@@ -1,0 +1,1 @@
+CALL `mlcase-hassakura.case1.populate_items_daily`();
