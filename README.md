@@ -71,3 +71,4 @@ There are extra files / folders:
 4. **answer_x_case_1.csv**: 3 CSVs are generated with the results for the tasks.
 5. **diagram/der.png**: Contains the `DER` as a image.
 6. **diagram/der_diagram_generate.txt**: Contains the `DER` as a text, to be used in dbdiagram.io website to recreate the DER
+7. **/images**: Contains screenshots from BigQuery Explorer with the executions
