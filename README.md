@@ -6,7 +6,7 @@ Due to new Google Cloud policies, shared credentials in public repos are automat
 
 ## Answers to the Case
 
-The answers to the case are in the `create_tables.sql` and `answers_case.sql`, but to be able to actually create, populate and run the queries, we created a Python script which connects to a existing BigQuery project. For each task, there's a query in the `queries` folder that will be executed.
+The answers to the case are in the `create_tables.sql` and `business_answers.sql`, but to be able to actually create, populate and run the queries, we created a Python script which connects to a existing BigQuery project. For each task, there's a query in the `queries` folder that will be executed.
 
 ## Code
 
