@@ -60,7 +60,7 @@ It creates, populates and then generates CSVs with the answers for all 3 tasks i
 There are extra files / folders:
 
 1. **create_tables.sql**: Contains the DDL to create and populate the tables
-2. **answers_case.sql**: Contains the SQL code for all 3 questions in the case.
+2. **business_answers.sql**: Contains the SQL code for all 3 questions in the case.
 3. **/queries**: Contains the separated queries to generate the answer to the problems, and also creates and populates the tables
    1. **create_tables_case1.sql**: Contain the CREATE TABLES and the schemas for the tables
    2. **populate_tables_case1.sql**: Contain the INSERTS for the tables
