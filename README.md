@@ -43,6 +43,8 @@ Run the script with:
 
     python3 run_queries_case1.py 
 
+In case it doesn't run with `python3`, try running with `python` and you should be fine
+
 The script should use a JSON file with the credentials to access the API, and they are in the **credentials.json** file.
 
 It creates, populates and then generates CSVs with the answers for all 3 tasks in the case, using the data from BigQuery:
